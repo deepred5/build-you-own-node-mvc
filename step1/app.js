@@ -1,5 +1,5 @@
 const { App } = require('./my-node-mvc');
-const routes = require('./route');
+const routes = require('./routes');
 const middlewares = require('./middlewares');
 
 const app = new App({

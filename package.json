@@ -1,0 +1,24 @@
+{
+  "name": "build-you-own-node-mvc",
+  "version": "1.0.0",
+  "description": "build you own node mvc framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepred5/build-you-own-node-mvc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepred5/build-you-own-node-mvc/issues"
+  },
+  "homepage": "https://github.com/deepred5/build-you-own-node-mvc#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^9.1.0"
+  }
+}

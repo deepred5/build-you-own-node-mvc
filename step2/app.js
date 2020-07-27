@@ -7,6 +7,10 @@ const app = new App({
   middlewares,
 });
 
+app.use((ctx, next) => {
+  ctx.body = ctx.state.global.requestId
+})
+
 app.listen(4445, () => {
   console.log('app start at: http://localhost:4445');
 })

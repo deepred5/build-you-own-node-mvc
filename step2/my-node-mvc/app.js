@@ -9,6 +9,20 @@ class App extends Koa {
     this.initMiddlewares();
   }
 
+  createContext(req, res) {
+    const context = super.createContext(req, res);
+    // 注入全局方法
+    this.injectUtil(context);
+
+    return context
+  }
+
+  injectUtil(context) {
+    context.sayHello = () => {
+      console.log('hello');
+    }
+  }
+
   initMiddlewares() {
     const { middlewares: businessMiddlewares } = this.options;
     // 使用this.use注册中间件

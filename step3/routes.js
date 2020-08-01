@@ -1,3 +1,5 @@
+const testRoute = require('./middlewares/testRoute');
+
 const routes = [
   {
     match: '/',
@@ -6,7 +8,8 @@ const routes = [
   {
     match: '/list',
     controller: 'home.fetchList',
-    method: 'get'
+    method: 'get',
+    middlewares: [testRoute]
   }
 ];
 

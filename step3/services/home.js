@@ -1,4 +1,6 @@
-const { Service } = require('../my-node-mvc')
+const { Service } = require('../my-node-mvc');
+
+const sleep = async (time) => new Promise(resolve => setTimeout(resolve, time)); 
 
 const posts = [{
   id: 1,
@@ -10,8 +12,11 @@ const posts = [{
 
 
 
-module.exports = class Home extends Service {
+class Home extends Service {
   async getList() {
+    await sleep(1200);
     return posts
   }
 }
+
+module.exports = Home

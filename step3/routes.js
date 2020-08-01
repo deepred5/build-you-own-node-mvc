@@ -6,7 +6,7 @@ const routes = [
   {
     match: '/list',
     controller: 'home.fetchList',
-    method: 'post'
+    method: 'get'
   }
 ];
 
